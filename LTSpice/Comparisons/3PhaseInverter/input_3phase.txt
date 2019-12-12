@@ -1,0 +1,7 @@
+15.             #vmax
+120.e-9         #deadtime or leadtime
+100.e-9         #rise/fall time 
+0.75            #modulation index (intensity of modulation/power max=0.866)
+150.           #ACline frequency
+100000.         #switching freq
+1              #number of ACline cycle

@@ -1,0 +1,100 @@
+* Model using LTspice Version 4 or later
+
+.SUBCKT OVP-GaN Go D S
+
+X_1    Go   out  Rblock
+X_2    out  S    Dblock
+X_3    out  D S  GPI65015
+
+.ENDS OVPblock
+*$
+
+*****************************************************************
+*
+.subckt Rblock D1 D0
+
+.param c_fac=1.0
+.param k_fac=1.0
+
+*
+bswitch D1 D0 I = (if (v(D1,D0)>0,
++	(k_fac*0.5841*v(D1,D0)/(1 + 4.062*v(D1,D0))),
++	(k_fac*(-0.002586)*log(1.0+exp(21*(v(D0,D1)+4.0)/2.0))*
++	4.3441*v(D0,D1)/(1 + max(0.5+0.2*(v(D0,D1)+6.1),0.2)*4.3441*v(D0,D1)))) )
+*
+*
+
+C1   D0 D1  {30.0e-12*c_fac}
+
+*C1   D0 D1  Q=1e-12*x*c_fac*(if(x>0,
+*+        ( (1.0+50.0/(1+(x+5)*(x+5)/9.))+
+*+           (25.0+130.0/(1+x*x/324.))),
+*+        ( (1.0+50.0/(1+(-x+5)*(-x+5)/9.))+
+*+           (25.0+130.0/(1+x*x/324.)))
+*+   ))
+
+.ends
+*$
+
+*****************************************************************
+*
+.subckt Dblock D1 D0
+
+.param c_fac=1.0
+.param k_fac=1.0
+
+*
+*
+bswitch D1 D0 I = (if (v(D1,D0)>0,
++	(k_fac*0.0034*log(1.0+exp(26*(v(D1,D0)-1.7)/2.0))*
++	4.3441*v(D1,D0)/(1 + max(0.5+0.2*(v(D1,D0)+4.1),0.2)*4.3441*v(D1,D0))),
++	(k_fac*(-2.6152e-10)*v(D0,D1)/(1+7.4719*v(D0,D1)))) )
+*
+*
+
+C1   D0 D1  {30.0e-12*c_fac}
+
+*C1   D0 D1  Q=1e-12*x*c_fac*(if (x>0,
+*+     0.5*( (1.0+50.0/(1+(x+5)*(x+5)/9.))+
+*+           (25.0+130.0/(1+x*x/324.))),
+*+     0.5*( (1.0+50.0/(1+(-x+5)*(-x+5)/9.))+
+*+           (25.0+130.0/(1+x*x/324.)))
+*+   ))
+
+.ends
+*$
+
+*****************************************************************
+*
+.subckt GPI65015 gatein drainin sourcein
+
+.param r_fac=1.0
+.param c_fac=1.0
+.param k_fac=1.0
+
+*
+rd drainin drain {0.05*r_fac} tc=0.0135
+rs sourcein source {0.02*r_fac} tc=0.0135
+rg gatein gate {0.38*r_fac}
+*
+*
+bswitch drain source I = (if (v(drain,source)>0,
++	(k_fac*1.6512*log(1.0+exp(26*(v(gate,source)-1.7)/2.0))*
++	v(drain,source)/(1 + max(0.5+0.2*(v(gate,source)+4.1),0.2)*v(drain,source))),
++	(k_fac*(-1.6512)*log(1.0+exp(21*(v(gate,drain)-1.7)/2.0))*
++	v(source,drain)/(1 + max(0.5+0.2*(v(gate,drain)+6.1),0.2)*v(source,drain)))) )
+*
+*
+
+C_GS	 gate source  	{119.0e-12*c_fac}
+C_GD    gate drain    	{4.0e-12*c_fac}
+C_SD	 source drain  	{25.0e-12*c_fac}
+
+*C_SG   source  gate  Q=1e-12*x*115.0*c_fac
+*C_GD   gate drain    Q=1e-12*x*(4.0+41.0/(1+x*x/1600.))*c_fac
+*C_SD   source drain  Q=1e-12*x*(20.0+190.0/(1+x*x/4900.))*c_fac
+.ends
+
+*$
+
+
