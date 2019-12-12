@@ -1,0 +1,102 @@
+Circuit: * C:\Users\user\Desktop\6.78MHz_Wireless_COPACK\PowerFull.asc
+
+Questionable use of curly braces in "b§e_abmgate y 0 v={if(v(a)>v(vthresh)&+v(b)>v(vthresh)&+v(c)>v(vthresh),v(vdd),0.0)} "
+    Error: undefined symbol in: "if([v](a)>v(vthresh)&+v(b)>v(vthresh)&+v(c)>v(vthresh),v(vdd),0.0)"
+WARNING: Node N013 is floating.
+
+Direct Newton iteration for .op point succeeded.
+Ignoring empty pin current: Ix(u1:inp)
+Ignoring empty pin current: Ix(u1:inm)
+Ignoring empty pin current: Ix(u1:hys)
+Ignoring empty pin current: Ix(u1:out)
+Ignoring empty pin current: Ix(u1:vdd)
+Ignoring empty pin current: Ix(u1:vthresh)
+Ignoring empty pin current: Ix(u2:inp)
+Ignoring empty pin current: Ix(u2:inm)
+Ignoring empty pin current: Ix(u2:hys)
+Ignoring empty pin current: Ix(u2:out)
+Ignoring empty pin current: Ix(u2:vdd)
+Ignoring empty pin current: Ix(u2:vthresh)
+Ignoring empty pin current: Ix(u3:inp)
+Ignoring empty pin current: Ix(u3:inm)
+Ignoring empty pin current: Ix(u3:hys)
+Ignoring empty pin current: Ix(u3:out)
+Ignoring empty pin current: Ix(u3:vdd)
+Ignoring empty pin current: Ix(u3:vthresh)
+Ignoring empty pin current: Ix(u4:n15987135)
+Ignoring empty pin current: Ix(u4:vdd_ok)
+Ignoring empty pin current: Ix(u4:n15980193)
+Ignoring empty pin current: Ix(u5:n15987135)
+Ignoring empty pin current: Ix(u5:vdd_ok)
+Ignoring empty pin current: Ix(u6:a)
+Ignoring empty pin current: Ix(u6:b)
+Ignoring empty pin current: Ix(u6:c)
+Ignoring empty pin current: Ix(u6:y)
+Ignoring empty pin current: Ix(u6:vdd)
+Ignoring empty pin current: Ix(u6:vthresh)
+Ignoring empty pin current: Ix(u7:drv)
+Ignoring empty pin current: Ix(u7:u4_n14518546)
+Ignoring empty pin current: Ix(u7:outh)
+Ignoring empty pin current: Ix(u8:drv)
+Ignoring empty pin current: Ix(u8:u4_n14518578)
+Ignoring empty pin current: Ix(u8:outl)
+Ignoring empty pin current: Ix(u9:gatein)
+Ignoring empty pin current: Ix(u9:drainin)
+Ignoring empty pin current: Ix(u9:sourcein)
+Ignoring empty pin current: Ix(u1:inp)
+Ignoring empty pin current: Ix(u1:inm)
+Ignoring empty pin current: Ix(u1:hys)
+Ignoring empty pin current: Ix(u1:out)
+Ignoring empty pin current: Ix(u1:vdd)
+Ignoring empty pin current: Ix(u1:vthresh)
+Ignoring empty pin current: Ix(u2:inp)
+Ignoring empty pin current: Ix(u2:inm)
+Ignoring empty pin current: Ix(u2:hys)
+Ignoring empty pin current: Ix(u2:out)
+Ignoring empty pin current: Ix(u2:vdd)
+Ignoring empty pin current: Ix(u2:vthresh)
+Ignoring empty pin current: Ix(u3:inp)
+Ignoring empty pin current: Ix(u3:inm)
+Ignoring empty pin current: Ix(u3:hys)
+Ignoring empty pin current: Ix(u3:out)
+Ignoring empty pin current: Ix(u3:vdd)
+Ignoring empty pin current: Ix(u3:vthresh)
+Ignoring empty pin current: Ix(u4:n15987135)
+Ignoring empty pin current: Ix(u4:vdd_ok)
+Ignoring empty pin current: Ix(u4:n15980193)
+Ignoring empty pin current: Ix(u5:n15987135)
+Ignoring empty pin current: Ix(u5:vdd_ok)
+Ignoring empty pin current: Ix(u6:a)
+Ignoring empty pin current: Ix(u6:b)
+Ignoring empty pin current: Ix(u6:c)
+Ignoring empty pin current: Ix(u6:y)
+Ignoring empty pin current: Ix(u6:vdd)
+Ignoring empty pin current: Ix(u6:vthresh)
+Ignoring empty pin current: Ix(u7:drv)
+Ignoring empty pin current: Ix(u7:u4_n14518546)
+Ignoring empty pin current: Ix(u7:outh)
+Ignoring empty pin current: Ix(u8:drv)
+Ignoring empty pin current: Ix(u8:u4_n14518578)
+Ignoring empty pin current: Ix(u8:outl)
+Ignoring empty pin current: Ix(u9:gatein)
+Ignoring empty pin current: Ix(u9:drainin)
+Ignoring empty pin current: Ix(u9:sourcein)
+
+Date: Thu Dec 12 19:44:52 2019
+Total elapsed time: 21.144 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 425642
+traniter = 425627
+tranpoints = 142737
+accept = 103398
+rejected = 39339
+matrix size = 336
+fillins = 135
+solver = Normal
+Thread vector: 23.7/15.0[6] 4.3/6.3[1] 6.8/4.3[6] 1.4/3.5[1]  2592/500
+Matrix Compiler1: 16.53 KB object code size  11.7/5.4/[1.9]
+Matrix Compiler2: 22.67 KB object code size  6.5/10.6/[2.8]
+
