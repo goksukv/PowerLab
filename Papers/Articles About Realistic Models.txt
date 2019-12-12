@@ -1,0 +1,4 @@
+
+*https://www.researchgate.net/publication/321124305_On_the_Source_of_Oscillatory_Behaviour_during_Switching_of_Power_Enhancement_Mode_GaN_HEMTs
+
+*https://www.researchgate.net/publication/241627369_Temperature_dependent_Pspice_model_of_silicon_carbide_power_MOSFET
