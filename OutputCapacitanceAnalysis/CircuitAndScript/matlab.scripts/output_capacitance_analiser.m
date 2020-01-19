@@ -1,6 +1,6 @@
 close all, clear all
-L=500e-9;
-[time1,Vvds1,Vn001] = spicetxtimport('Cicuit2.txt',2, 240);
+L=5e-6;
+[time1,Vvds1,Vn001] = spicetxtimport('ver2.txt' ,2, 340);
 [time, Vds, Vin ] = resonanceextractor(time1,Vvds1,Vn001);
 dt = gradient(time);
 Vds_dot = gradient(Vds)./dt;
@@ -32,9 +32,11 @@ for i=peak_index: 1:length(time)
 end
 
 figure
-plot(Vdss,Css)
+semilogy(Vdss,Css*1e12)
 title('Vds vs Css')
 xlabel('Vds(V')
-ylabel('Coss(F)')
-
-%samplevalidate(time, Vds_int, Vds_dot , Vds);
+ylabel('Coss(pF)')
+grid on
+ylim([100 1000])
+xlim([0 500])
+samplevalidate(time, Vds_int, Vds_dot , Vds);
