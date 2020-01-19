@@ -21,7 +21,7 @@
 
 **Results:**
 
-Until now results are really close to the real datasheet data. 
+Until now results are really close to the real datasheet data.  We noted that resistance adds just a little bit (<%2) error to the calculation. 
 
 **TODO:**
 
@@ -30,4 +30,4 @@ Until now results are really close to the real datasheet data.
 - [ ] Test with other MOTFET maybe to observe hysteresis.
 - [ ] Comments to explain code.
 - [ ] Plot improvements.
-- [ ] Realistic resistance calculation and simulation integration.
+- [x] Realistic resistance calculation and simulation integration.
