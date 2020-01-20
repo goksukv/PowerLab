@@ -1,0 +1,21 @@
+Circuit: * C:\Users\user\Desktop\PowerLab\OutputCapacitanceAnalysis\CircuitAndScript\Cicuit2.asc
+
+Direct Newton iteration for .op point succeeded.
+
+Date: Mon Jan 20 15:20:07 2020
+Total elapsed time: 14.027 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 2939417
+traniter = 2939413
+tranpoints = 1000375
+accept = 1000345
+rejected = 30
+matrix size = 10
+fillins = 2
+solver = Normal
+Matrix Compiler1: 702 bytes object code size  0.2/0.1/[0.1]
+Matrix Compiler2: 802 bytes object code size  0.1/0.2/[0.1]
+

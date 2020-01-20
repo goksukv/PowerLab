@@ -1,0 +1,9 @@
+* C:\Users\user\Desktop\PowerLab\OutputCapacitanceAnalysis\CircuitAndScript\Cicuit2.asc
+V1 N001 0 PULSE(0 5 0 1p 1p 1e-3 20e-3)
+L1 VDD Vds 5µ Rser=60m
+V2 VDD 0 350m
+XU1 N001 Vds 0 GS66516T_L1V2_1
+.tran 0 1.00007m 0.99999m 01n
+.lib GaN_LTspice_GS66516T_L1V2_1.lib
+.backanno
+.end

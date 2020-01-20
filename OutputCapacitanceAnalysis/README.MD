@@ -19,6 +19,10 @@
 5. Run main script
 6. (Optional) Uncomment  samplevalide function to see if the sampling is enough for proper integration and differentiation. 
 
+**Progress**:
+
+Results with internal resistance of the inductance added as 'output_capacitance_analiserver2'. I am sorry that this script is a bit messy now. I will improve quality later since I have really small time to work. 
+
 **Results:**
 
 Until now results are really close to the real datasheet data.  We noted that resistance adds just a little bit (<%2) error to the calculation. 
@@ -27,7 +31,7 @@ Until now results are really close to the real datasheet data.  We noted that re
 
 - [x] The test is only for 120 V increase it up to 500V. Note that until know theoretical and experimental results are fit each other.
 - [x] Test with different inductance values.
-- [ ] Test with other MOTFET maybe to observe hysteresis.
+- [ ] Test with other MOSFET maybe to observe hysteresis.
 - [ ] Comments to explain code.
 - [ ] Plot improvements.
 - [x] Realistic resistance calculation and simulation integration.
