@@ -23,6 +23,10 @@
 
 Results with internal resistance of the inductance added as 'output_capacitance_analiserver2'. I am sorry that this script is a bit messy now. I will improve quality later since I have really small time to work. 
 
+###### LAST:
+
+I added realinductor.txt file which is tested by real chosen ferrite inductor. open Output_capacitance_analyzer script and change the txt file name  in it(Argument of spicetxtimport function.). Then adjust enter inductance value as 150e-6 at the script and run it. You will se a different capacitance plot than others since I changed the GaN model (GS66508B which ı am using now). Good new is it is again fits with the data sheet. 
+
 **Results:**
 
 Until now results are really close to the real datasheet data.  We noted that resistance adds just a little bit (<%2) error to the calculation. 
@@ -35,3 +39,6 @@ Until now results are really close to the real datasheet data.  We noted that re
 - [ ] Comments to explain code.
 - [ ] Plot improvements.
 - [x] Realistic resistance calculation and simulation integration.
+- [x] **Inductance decision. (Couldn't find good air core unfortunately )
+
+**:I wasn't that successful on it. 
